@@ -1,0 +1,21 @@
+{
+  "name": "@xalodev/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --watch --format esm,cjs --dts",
+    "lint": "eslint src --ext .ts,.tsx --fix"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@xalodev/ts-config": "*",
+    "@xalodev/eslint-config": "*",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
