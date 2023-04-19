@@ -6,17 +6,23 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --watch --format esm,cjs --dts",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --watch --format esm,cjs --external react --dts",
     "lint": "eslint src --ext .ts,.tsx --fix"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@xalodev/ts-config": "*",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
     "@xalodev/eslint-config": "*",
     "@xalodev/tokens": "*",
+    "@xalodev/ts-config": "*",
+    "react": "^18.2.0",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
   }
 }
