@@ -1,0 +1,4 @@
+{
+  "extends": "@xalodev/ts-config/react.json",
+  "include": ["src"]
+}

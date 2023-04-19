@@ -27,5 +27,11 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.0.5",
     "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "@xalodev/react": "*",
+    "@xalodev/tokens": "*",
+    "@xalodev/eslint-config": "*",
+    "@xalodev/ts-config": "*"
   }
 }
